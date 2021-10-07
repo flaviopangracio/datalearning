@@ -1,12 +1,12 @@
 /* Fonts */
 @font-face {
 	font-family: 'HelveticaNeueNormal';
-	src: url('/cloud/project/template/4.reports/report/www/custom-fonts/HelveticaNeueNormal.ttf');
+	src: url('../../../assets/fonts/HelveticaNeueNormal.ttf');
 }
 
 @font-face {
 	font-family: 'HelveticaNeueBold';
-	src: url('/cloud/project/template/4.reports/report/www/custom-fonts/HelveticaNeueBold.ttf');
+	src: url('../../../assets/fonts/HelveticaNeueBold.ttf');
 }
 
 /* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_14464">Text with this font applied</p> */
