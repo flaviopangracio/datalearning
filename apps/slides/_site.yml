@@ -1,0 +1,26 @@
+name: "Analytics Report"
+
+output:
+ xaringan::moon_reader:
+    self_contained: true
+    #lib_dir: www
+    css: ['../css/styles.css']
+    seal: true
+    nature:
+      ratio: '16:9'
+      slideNumberFormat: '%current%' 
+      highlightStyle: ir-black
+      highlightLines: true
+      countIncrementalSlides: false
+
+
+    #css: ['www/estilos.css', 'default', 'hygge']
+
+# output:
+#   ioslides_presentation:
+#     css: 'www/estilos.css'
+#     widescreen: true
+#     smaller: true
+#     logo: 'www/logo-tembici.png'
+#     transition: slower
+#     incremental: false

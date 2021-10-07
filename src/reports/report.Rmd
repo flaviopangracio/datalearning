@@ -1,0 +1,52 @@
+---
+title: "Resultados Completos da Análise"
+---
+
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+# Remover notação científica
+options(scipen=999, warn = -1)
+
+# Carregando os pacotes
+base::source("../../config/libs/install_and_load_packages.R")
+
+# Carregando os dados
+dfs <-readRDS("../../exports/rds-results/dfs.rds")
+```
+
+___
+
+# Sumário Executivo
+
+## Aspectos Metodológicos {.unnumbered}
+
+
+* Escrever aspectos metodológicos
+
+
+
+## Keys Findings {.unnumbered}
+
+* Escrever principais descobertas e observações
+
+
+# Atrasos médios
+
+* É possível dividir seu documento em tabs, como abaixo
+
+### {.unnumbered .tabset .tabset-fade}
+
+#### Atrasos por mês  {.unnumbered}
+
+``` {r}
+dfs$charts$mean_delay_month
+```
+
+#### Atrasos por mês/cia aerea {.unnumbered}
+
+```{r}
+dfs$tbl$mean_delay_month
+```
+
+### {.unnumbered}

@@ -1,0 +1,74 @@
+---
+title: "Resultados da Análise de Dados"
+---
+
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+# Carregando os pacotes
+base::source("../../config/libs/install_and_load_packages.R")
+# Carregando os dados
+dfs <- readRDS("../../exports/rds-results/dfs.rds")
+```
+
+layout: true
+
+background-image: url(../../assets/images/logo-tembici.png)
+background-position: 100% 0%
+background-size: 10%
+
+
+---
+
+## Objetivo
+
+- O objetivo deste template é auxiliar na construção das análises por parte da equipe de *Data Learning*. 
+
+- A lógica da apresentação é muito simples: 
+
+  * `"---"` inicia um novo slides; 
+  * `"class: sectioninv !important, middle"` cria uma nova sessão de slides;
+  * `".pull-left[]"` e `.pull-right[]` divide o slide em duas colunas;
+  * As demais características seguem os princípios do <a href="https://www.dataquest.io/blog/r-markdown-guide-cheatsheet/" target="_blank">rmarkdown</a>., podendo aceitar eletmentos de *html*. 
+
+
+---
+
+## Metodologia
+
+- Inserir metodologia utilizada, se necesário: existe alguma classificação utilizada, ou alguma variável criada no processo que seja importante esclarecer para a equipe de negócio?
+
+---
+
+class: sectioninv !important, middle
+
+# Resultados: Análise Inicial
+
+---
+## Testes de Disponibilidade
+
+.pull-left[
+
+<h4 class = 'title' align = 'center'> <b>Principais Pontos</b></h4>
+
+- É possível utilizar títulos em *html*, como acima, para a divisão dentro das colunas;
+
+- Para escrever chamando algum objeto do R, calculado previamente, basta utilizar o *inline chunk*, dessa forma: `r 2+3`. Essa forma de reportar os resultados facilita o trabalho e minimiza o retrabalho, uma vez que as alterações no código .R alteram imediantamente no .Rmd.
+
+- Para inserir tabelas, gráficos e outrosd objetos, utiliza-se as *chunks*, "```{r}";
+
+]
+
+.pull-right[
+<h5 class = 'title' align = 'center'> <b>Resultado </b></h4>
+```{r}
+(dfs$charts$mean_delay_month)
+```
+]
+
+
+---
+
+## Conclusão
+
+- Inserir a conclusão 
+
