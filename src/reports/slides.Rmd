@@ -5,9 +5,9 @@ title: "Resultados da Análise de Dados"
 ```{r setup, include=FALSE, warning=FALSE, message=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 # Carregando os pacotes
-base::source("../../config/libs/install_and_load_packages.R")
+base::source(glue("{getwd()}/config/libs/install_and_load_packages.R"))
 # Carregando os dados
-dfs <- readRDS("../../exports/rds-results/dfs.rds")
+dfs <- readRDS(glue("{getwd()}/exports/rds-results/dfs.rds"))
 ```
 
 layout: true
@@ -21,14 +21,14 @@ background-size: 10%
 
 ## Objetivo
 
-- O objetivo deste template é auxiliar na construção das análises por parte da equipe de *Data Learning*. 
+- O objetivo deste template é auxiliar na construção das análises por parte da equipe de *Data Learning*.
 
-- A lógica da apresentação é muito simples: 
+- A lógica da apresentação é muito simples:
 
-  * `"---"` inicia um novo slides; 
+  * `"---"` inicia um novo slides;
   * `"class: sectioninv !important, middle"` cria uma nova sessão de slides;
   * `".pull-left[]"` e `.pull-right[]` divide o slide em duas colunas;
-  * As demais características seguem os princípios do <a href="https://www.dataquest.io/blog/r-markdown-guide-cheatsheet/" target="_blank">rmarkdown</a>., podendo aceitar eletmentos de *html*. 
+  * As demais características seguem os princípios do <a href="https://www.dataquest.io/blog/r-markdown-guide-cheatsheet/" target="_blank">rmarkdown</a>., podendo aceitar eletmentos de *html*.
 
 
 ---
@@ -70,5 +70,5 @@ class: sectioninv !important, middle
 
 ## Conclusão
 
-- Inserir a conclusão 
+- Inserir a conclusão
 

@@ -8,11 +8,13 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 # Remover notação científica
 options(scipen=999, warn = -1)
 
+project_root_path <- getwd()
+
 # Carregando os pacotes
-base::source("../../config/libs/install_and_load_packages.R")
+base::source(glue("{project_root_path}/config/libs/install_and_load_packages.R"))
 
 # Carregando os dados
-dfs <-readRDS("../../exports/rds-results/dfs.rds")
+dfs <-readRDS(glue("{project_root_path}/exports/rds-results/dfs.rds"))
 ```
 
 ___
